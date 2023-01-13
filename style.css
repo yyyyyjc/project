@@ -1,0 +1,382 @@
+@charset "utf-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+video{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -10;
+}
+source{
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #999999;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    font-family: arial;
+    font-size: 20px;
+    background: black;
+}
+
+#wrapper {
+    width: 1020px;
+    margin: 0 auto;
+    border: #333 1px solid;
+    overflow: hidden;
+}
+
+/*头部*/
+
+#header {
+    width: 1020px;
+    height: 410px;
+    overflow: hidden;
+}
+
+#header .logo {
+    display: block;
+    height: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*导航*/
+
+#menu {
+    width: 100%;
+    height: 53px;
+    margin-bottom: 10px;
+    background: url(menu.jpg) no-repeat;
+}
+
+#menu ul li {
+    display: block;
+}
+
+#menu ul li a {
+    float: left;
+    display: block;
+    width: 170px;
+    height: 53px;
+    line-height: 53px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    background: url(menu_bian.jpg) center left no-repeat;
+}
+
+#menu ul li a:hover {
+    color: #00ccff;
+}
+
+.erji{
+    display: none;
+    position: absolute;
+    background-color: red;
+}
+.erji a{
+    color:black;
+    text-decoration: none;
+    text-align: left;
+}
+.gushi:hover .erji{
+    display: block;
+    color: red;
+}
+.gushi{
+    display: inline-block;
+    position: relative;
+}
+
+/*中间*/
+
+#main {
+    width: 960px;
+    padding: 30px;
+    line-height: 2;
+    overflow: hidden;
+}
+
+#main .content {
+    float: left;
+    width: 560px
+}
+.content .list p{
+    font-size: 14px;
+    color: black;
+}
+
+.content .list {
+    overflow: hidden;
+}
+
+.content .list li {
+    height: 136px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.content .list li img {
+    width: 200px;
+    height: 130px;
+    border: 3px solid #35373b;
+    float: left;
+    margin-right: 20px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.content .list li img:hover{
+    transform: scale(1.2);
+}
+
+.content .list li h5 {
+    font-size: 16px;
+    color: #d82b82;
+}
+
+.content .jianjie li {
+    line-height: 30px;
+}
+
+#main .sidebar {
+    float: right;
+    width: 320px;
+}
+
+.sidebar .denglu h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.sidebar .denglu p {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.sidebar .denglu p span {
+    display: block;
+    width: 60px;
+    float: left;
+}
+
+.sidebar .denglu p input {
+    display: block;
+    width: 260px;
+    height: 30px;
+    border: none;
+    float: left;
+}
+
+.sidebar .denglu .btn img {
+    float: left;
+    margin-left: 60px;
+}
+
+.sidebar .chengyuan {
+    clear: both;
+    padding-top: 30px;
+}
+
+.sidebar .chengyuan h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.sidebar .chengyuan li {
+    line-height: 30px;
+    border-bottom: 1px dashed black;
+}
+
+.sidebar .chengyuan li a:hover {
+    color: red;
+}
+
+.sidebar .chengyuan img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/*故事介绍*/
+
+.jieshao h2 {
+    margin-bottom: 10px;
+}
+
+.jieshao p {
+    text-indent: 32px;
+    font-size: large;
+}
+
+.jieshao img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/*主要人物*/
+
+.renwu h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.renwu li {
+    width: 220px;
+    float: left;
+    margin: 10px;
+    text-align: center;
+}
+
+.renwu li img {
+    width: 220px;
+    height: 220px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.renwu li img:hover{
+    transform: scale(1.2);
+}
+
+.renwu {
+    width: 100%;
+}
+
+.renwu .page {
+    clear: both;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+.renwu p{
+    font-size: 20px;
+    color: white;
+}
+
+/*海贼美图*/
+
+.meitu h2 {
+    text-align: center;
+}
+
+.meitu img {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+/*注册*/
+
+.zhuce h2 {
+    text-align: center;
+}
+
+.zhuce .input-box {
+    width: 500px;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.zhuce .input-box p {
+    height: 26px;
+    width: 100px;
+    float: left;
+    line-height: 26px;
+}
+
+.zhuce .input-box input {
+    width: 400px;
+    height: 26px;
+    border: none;
+    float: left;
+}
+
+.zhuce .btn {
+    display: block;
+    width: 92px;
+    height: 59px;
+    background: url(zhuce.png);
+    border: none;
+    margin: auto;
+    outline: none;
+    cursor: pointer;
+}
+
+/*留言*/
+
+.liuyan h2 {
+    text-align: center;
+}
+
+.liuyan .input-box {
+    width: 500px;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.liuyan .input-box p {
+    height: 26px;
+    width: 100px;
+    float: left;
+    line-height: 26px;
+}
+
+.liuyan .input-box input {
+    width: 400px;
+    height: 26px;
+    border: none;
+    float: left;
+}
+
+.liuyan .input-box textarea {
+    display: block;
+    width: 400px;
+    height: 100px;
+    border: none;
+    float: left;
+}
+
+.liuyan .btn {
+    display: block;
+    width: 92px;
+    height: 59px;
+    background: url(tijiao.png);
+    border: none;
+    margin: auto;
+    outline: none;
+    cursor: pointer;
+}
+
+#footer {
+    clear: both;
+    width: 960px;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 30px;
+}
+#footer h2 a:hover{
+    color: red;
+}
